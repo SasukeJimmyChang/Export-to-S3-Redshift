@@ -1,6 +1,6 @@
-h1. Export to S3 + Redshift
+<h1> Export to S3 + Redshift
 
-h2. Export to S3 
+<h2> Export to S3 
 
 * Service => Mobile Analytics => Export to S3 
 
