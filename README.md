@@ -18,36 +18,33 @@
 |9. Set you EC2 instance inbound IP: **210.63.0.0/16** (Acer company)|
 ![ec2-security-group-ip](https://cloud.githubusercontent.com/assets/22315139/24493705/5dd096e4-1562-11e7-9248-de63148a52a1.png)
 
-| Redshift SQL  |
-| --- |
-|1. How to get credentials?| 
-|![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)|
-|2. Copy data from S3||
+># Redshift SQL  
+1. How to get credentials? 
+![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)
+2. Copy data from S3|
 ```ruby
   copy customer
   from 's3://mybucket/customer'  //Your S3 file path//
   credentials '<aws-auth-args>';
   ```
-|3.Example|
+3. Example
 ```ruby
   copy testtable
   from 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/awsma/events/7297ae7eed0c41998d05d842096c8537/2016/11/10/10/test_de_gz'
   credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-autoExportS3ToRedshift';
 ```
-|4. [Copy data from S3 by JSON doc 1](http://docs.aws.amazon.com/redshift/latest/dg/copy-usage_notes-copy-from-json.html)
-|5. or [Copy data from S3 by JSON doc 2](http://docs.aws.amazon.com/redshift/latest/dg/r_COPY_command_examples.html#r_COPY_command_examples-copy-from-json)
-** Example
-<pre><code class="ruby">
+4. [Copy data from S3 by JSON doc 1](http://docs.aws.amazon.com/redshift/latest/dg/copy-usage_notes-copy-from-json.html) or [Copy data from S3 by JSON doc 2](http://docs.aws.amazon.com/redshift/latest/dg/r_COPY_command_examples.html#r_COPY_command_examples-copy-from-json)
+5. Example
+```ruby
 copy category_test2
 from 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/awsma/events/7297ae7eed0c41998d05d842096c8537/2016/11/10/10/test_de_gz'
 credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-autoExportS3ToRedshift'
 json 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/jsonpaths/halo_awseventexportjsonpaths.json';
-</code></pre>
+```
+6. [(ALTER TABLE ADD/DROP COLUMN](http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/analytics.html)
 
-* "(ALTER TABLE ADD/DROP COLUMN)":http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/analytics.html
-
-h2. APPENDS
-** "Amazon Redshift and PostgreSQL differences":http://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html
-** "Amazon Redshift Best Practices":http://docs.aws.amazon.com/redshift/latest/dg/best-practices.html
-** "Configure Security Options for Connections":https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html
-** "(Authorizing Amazon Redshift to Access Other AWS Services On Your Behalf)":https://docs.aws.amazon.com/redshift/latest/mgmt/authorizing-redshift-service.html
+# APPENDS
+- [Amazon Redshift and PostgreSQL differences](http://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html)
+- [Amazon Redshift Best Practices](http://docs.aws.amazon.com/redshift/latest/dg/best-practices.html)
+- [Configure Security Options for Connections](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html)
+- [(Authorizing Amazon Redshift to Access Other AWS Services On Your Behalf](https://docs.aws.amazon.com/redshift/latest/mgmt/authorizing-redshift-service.html)
