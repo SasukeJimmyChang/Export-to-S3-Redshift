@@ -51,4 +51,4 @@ json 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/jsonpath
 | [Amazon Redshift and PostgreSQL differences](http://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html) |
 | [Amazon Redshift Best Practices](http://docs.aws.amazon.com/redshift/latest/dg/best-practices.html) |
 | [Configure Security Options for Connections](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html) |
-| [(Authorizing Amazon Redshift to Access Other AWS Services On Your Behalf] (https://docs.aws.amazon.com/redshift/latest/mgmt/authorizing-redshift-service.html) |
+| [(Authorizing Amazon Redshift to Access Other AWS Services On Your Behalf)](https://docs.aws.amazon.com/redshift/latest/mgmt/authorizing-redshift-service.html) |
