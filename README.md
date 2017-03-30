@@ -1,10 +1,10 @@
-<h1> Export to S3 + Redshift
+# Export to S3 + Redshift
 
-<h2> Export to S3 
+## Export to S3 
 
 * Service => Mobile Analytics => Export to S3 
 
-h2. Export to Redshift
+## Export to Redshift
 
 * Service => Mobile Analytics => Redshift + Export to S3
 * "Steps by docs":https://aws.amazon.com/tw/blogs/aws/export-amazon-mobile-analytics-to-redshift-automatically/ or "Steps by blog":http://docs.aws.amazon.com/mobileanalytics/latest/ug/auto-export-getting-started-redshift.html
