@@ -4,6 +4,8 @@
 | --- |
 | Service => Mobile Analytics => Export to S3 |
 
+---
+
 | Export to Redshift |
 | --- |
 |1. Service => Mobile Analytics => Redshift + Export to S3 |
@@ -17,6 +19,8 @@
 |![redshift_access_denied](https://cloud.githubusercontent.com/assets/22315139/24493702/5c831bf4-1562-11e7-966d-827fb16e90b4.png)|
 |9. Set you EC2 instance inbound IP: **210.63.0.0/16** (Acer company)|
 ![ec2-security-group-ip](https://cloud.githubusercontent.com/assets/22315139/24493705/5dd096e4-1562-11e7-9248-de63148a52a1.png)
+
+---
 
 ># Redshift SQL  
 
@@ -45,6 +49,8 @@ credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-au
 json 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/jsonpaths/halo_awseventexportjsonpaths.json';
 ```
 >6. [(ALTER TABLE ADD/DROP COLUMN)](http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/analytics.html)
+
+---
 
 | APPENDS |
 | --- |
