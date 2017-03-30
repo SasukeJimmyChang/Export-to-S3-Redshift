@@ -4,22 +4,22 @@
 | --- |
 | Service => Mobile Analytics => Export to S3 |
 
-| Export to Redshift|
+| Export to Redshift |
 | --- |
 |1. Service => Mobile Analytics => Redshift + Export to S3 |
 |2.  [Steps by docs](https://aws.amazon.com/tw/blogs/aws/export-amazon-mobile-analytics-to-redshift-automatically/)  or [Steps by blog](http://docs.aws.amazon.com/mobileanalytics/latest/ug/auto-export-getting-started-redshift.html)|
-|- **We need a group authorized which includes 「CloudFormation」 access advisor, or we get the return message "Bad request".**|
-|- (Only administrator can do) Service => IAM => User => add into "Develop group".|
-|- %{color:red}The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.%|
+|3. **We need a group authorized which includes 「CloudFormation」 access advisor, or we get the return message "Bad request".**|
+|4. (Only administrator allow to do) Service => IAM => User => add into "Develop group".|
+|5. **The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.**|
 
-* Amazon Redshift does not provide or install any SQL client tools or libraries, so you must "install SQL client tool":http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-prereq.html
-* "Connect to the Redshift Cluster":http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-connect-to-cluster.html
+|6. Amazon Redshift does not provide or install any SQL client tools or libraries, so you must [install SQL client tool](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-prereq.html) |
+|7. [Connect to the Redshift Cluster](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-connect-to-cluster.html) |
 
-* %{color:red}Your must add your IAM role to Redshift, or you can't operate SQL command for Redshift.%
+|8. **Your must add your IAM role to Redshift, or you can't operate SQL command for Redshift.**|
 
-![redshift_access_denied](https://cloud.githubusercontent.com/assets/22315139/24493702/5c831bf4-1562-11e7-966d-827fb16e90b4.png)
+|![redshift_access_denied](https://cloud.githubusercontent.com/assets/22315139/24493702/5c831bf4-1562-11e7-966d-827fb16e90b4.png)|
 
-* Set you EC2 instance inbound IP: %{color:red}210.63.0.0/16% (Acer company)
+|9. Set you EC2 instance inbound IP: **210.63.0.0/16** (Acer company)|
 ![ec2-security-group-ip](https://cloud.githubusercontent.com/assets/22315139/24493705/5dd096e4-1562-11e7-9248-de63148a52a1.png)
 
 h2. Redshift SQL 
