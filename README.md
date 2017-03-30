@@ -23,11 +23,11 @@
 |1. How to get credentials?| 
 |![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)|
 |2. Copy data from S3||
-|```ruby
+```ruby
   copy customer
   from 's3://mybucket/customer'  //Your S3 file path//
   credentials '<aws-auth-args>';
-  ```|
+  ```
 |3.Example
 <pre><code class="ruby">
   copy testtable
