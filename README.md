@@ -16,16 +16,16 @@
 * "Connect to the Redshift Cluster":http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-connect-to-cluster.html
 
 * %{color:red}Your must add your IAM role to Redshift, or you can't operate SQL command for Redshift.%
-!redshift_access_denied.png!
 
+![redshift_access_denied](https://cloud.githubusercontent.com/assets/22315139/24493702/5c831bf4-1562-11e7-966d-827fb16e90b4.png)
 
 * Set you EC2 instance inbound IP: %{color:red}210.63.0.0/16% (Acer company)
-!ec2-security-group-ip.png!
+![ec2-security-group-ip](https://cloud.githubusercontent.com/assets/22315139/24493705/5dd096e4-1562-11e7-9248-de63148a52a1.png)
 
 h2. Redshift SQL 
 
 * How to get credentials?
-!iam_role.png!
+![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)
 
 * Copy data from S3
 <pre><code class="ruby">
