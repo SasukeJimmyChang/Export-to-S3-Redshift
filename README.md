@@ -23,7 +23,7 @@
 >1. How to get credentials? 
 >![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)
 
->2. Copy data from S3|
+>2. Copy data from S3
 ```ruby
   copy customer
   from 's3://mybucket/customer'  //Your S3 file path//
@@ -44,7 +44,7 @@ from 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/awsma/ev
 credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-autoExportS3ToRedshift'
 json 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/jsonpaths/halo_awseventexportjsonpaths.json';
 ```
->6. [(ALTER TABLE ADD/DROP COLUMN](http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/analytics.html)
+>6. [(ALTER TABLE ADD/DROP COLUMN)](http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/analytics.html)
 
 | APPENDS |
 | --- |
