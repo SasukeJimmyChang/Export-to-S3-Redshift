@@ -11,14 +11,10 @@
 |3. **We need a group authorized which includes 「CloudFormation」 access advisor, or we get the return message "Bad request".**|
 |4. (Only administrator allow to do) Service => IAM => User => add into "Develop group".|
 |5. **The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.**|
-
 |6. Amazon Redshift does not provide or install any SQL client tools or libraries, so you must [install SQL client tool](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-prereq.html) |
 |7. [Connect to the Redshift Cluster](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-connect-to-cluster.html) |
-
 |8. **Your must add your IAM role to Redshift, or you can't operate SQL command for Redshift.**|
-
 |![redshift_access_denied](https://cloud.githubusercontent.com/assets/22315139/24493702/5c831bf4-1562-11e7-966d-827fb16e90b4.png)|
-
 |9. Set you EC2 instance inbound IP: **210.63.0.0/16** (Acer company)|
 ![ec2-security-group-ip](https://cloud.githubusercontent.com/assets/22315139/24493705/5dd096e4-1562-11e7-9248-de63148a52a1.png)
 
