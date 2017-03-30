@@ -6,12 +6,13 @@
 
 ## Export to Redshift
 
-# Service => Mobile Analytics => Redshift + Export to S3
+- Service => Mobile Analytics => Redshift + Export to S3
 ## [Steps by docs](https://aws.amazon.com/tw/blogs/aws/export-amazon-mobile-analytics-to-redshift-automatically/)  or [Steps by blog](http://docs.aws.amazon.com/mobileanalytics/latest/ug/auto-export-getting-started-redshift.html)
-# %{color:red}We need a group authorized which includes 「CloudFormation」 access advisor, or we get the return message "Bad request".%
-## (Only administrator can do) Service => IAM => User => add into "Develop group".
-#<font color="red">The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.<font>
-%{color:red}The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.%
+- %{color:red}We need a group authorized which includes 「CloudFormation」 access advisor, or we get the return message "Bad request".%
+-- (Only administrator can do) Service => IAM => User => add into "Develop group".
+- <font color="red">The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.</font>
+- <font color=red>内容</font>
+- %{color:red}The S3 bucket and Amazon Redshift cluster must be in the US East (N. Virginia) Region.%
 
 * Amazon Redshift does not provide or install any SQL client tools or libraries, so you must "install SQL client tool":http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-prereq.html
 * "Connect to the Redshift Cluster":http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-connect-to-cluster.html
