@@ -22,20 +22,20 @@
 >1. How to get credentials? 
 >![iam_role](https://cloud.githubusercontent.com/assets/22315139/24493697/59d6d35a-1562-11e7-9a38-5029cb82d500.png)
 >2. Copy data from S3|
-```ruby
+>```ruby
   copy customer
   from 's3://mybucket/customer'  //Your S3 file path//
   credentials '<aws-auth-args>';
   ```
 >3. Example
-```ruby
+>```ruby
   copy testtable
   from 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/awsma/events/7297ae7eed0c41998d05d842096c8537/2016/11/10/10/test_de_gz'
   credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-autoExportS3ToRedshift';
 ```
 >4. [Copy data from S3 by JSON doc 1](http://docs.aws.amazon.com/redshift/latest/dg/copy-usage_notes-copy-from-json.html) or [Copy data from S3 by JSON doc 2](http://docs.aws.amazon.com/redshift/latest/dg/r_COPY_command_examples.html#r_COPY_command_examples-copy-from-json)
 >5. Example
-```ruby
+>```ruby
 copy category_test2
 from 's3://mobile-analytics-11-10-2016-68e606befbf542298f14a32d1515a9f7/awsma/events/7297ae7eed0c41998d05d842096c8537/2016/11/10/10/test_de_gz'
 credentials 'aws_iam_role=arn:aws:iam::641923872123:role/Halo-mobileanalytics-autoExportS3ToRedshift'
